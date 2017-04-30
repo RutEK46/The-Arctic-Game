@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.aleksandra.combined.IndexingActivity"><![CDATA[
+
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Pic 1 here"
+    android:text="Pic 2 there"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+    android:scrollbarAlwaysDrawVerticalTrack="true"
+
+
+
+
+
+
+    ]]>
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="395dp"
+        android:layout_height="248dp"
+        android:layout_constraintLeft_toLeftOf="parent"
+        android:layout_constraintRight_toRightOf="parent"
+        android:src="@drawable/pic_2017_04_29_17_10_42"
+        android:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="16dp" />
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="318dp"
+        android:layout_height="39dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="12dp"
+        android:paddingBottom="0dp"
+        android:paddingLeft="10sp"
+        android:paddingTop="0dp"
+
+        android:text="Whats in the picture?"
+        android:textSize="20sp"
+        android:layout_constraintTop_toBottomOf="@+id/imageView9"
+        tools:layout_editor_absoluteX="33dp" />
+
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="242dp"
+        android:layout_height="39dp"
+        android:inputType="text"
+        android:paddingLeft="10sp"
+        android:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:layout_editor_absoluteX="62dp"
+        android:layout_marginTop="8dp"
+        android:background="#eeeeee"
+        />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:text="Tags (separated by spaces)"
+        android:textSize="20sp"
+        android:paddingTop="0dp"
+        android:paddingLeft="10sp"
+        android:layout_width="306dp"
+        android:layout_height="39dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        tools:layout_editor_absoluteX="39dp"
+        android:layout_marginTop="8dp"
+        android:layout_constraintTop_toBottomOf="@+id/editText2" />
+
+    <EditText
+        android:id="@+id/text"
+        android:layout_width="285dp"
+        android:layout_height="40dp"
+        android:paddingLeft="10sp"
+        android:inputType="text"
+        tools:layout_editor_absoluteX="33dp"
+        android:layout_marginTop="8dp"
+        android:background="#eeeeee"
+        android:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+
+
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="306dp"
+        android:layout_height="39dp"
+
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+
+        android:paddingLeft="10sp"
+        android:paddingTop="0dp"
+        android:text="Some description"
+
+        android:textSize="20sp"
+        android:layout_constraintTop_toBottomOf="@+id/text"
+        tools:layout_editor_absoluteX="-41dp" />
+
+
+    <EditText
+
+        android:id="@+id/editText4"
+        android:layout_width="fill_parent"
+        android:minLines="4"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:inputType="textMultiLine"
+        android:lines="5"
+        android:gravity="top|left"
+        android:paddingLeft="10sp"
+
+        android:layout_constraintTop_toBottomOf="@+id/textView4"
+        tools:layout_editor_absoluteX="19dp"
+        android:background="#eeeeee"
+        android:layout_margin="10sp"
+        />
+
+
+</RelativeLayout>
